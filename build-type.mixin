@@ -1,16 +1,26 @@
 {
     "build": {
         "debug": {
-            "cmake-args": ["-DCMAKE_BUILD_TYPE=Debug"]
+            "cmake-args": ["-DCMAKE_BUILD_TYPE=Debug",
+                            "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+                            "-DCMAKE_CXX_FLAGS='-std=c++17 -Og'",
+                            "-DCMAKE_C_FLAGS='-Og'"]
         },
         "min-size-rel": {
-            "cmake-args": ["-DCMAKE_BUILD_TYPE=MinSizeRel"]
+            "cmake-args": ["-DCMAKE_BUILD_TYPE=MinSizeRel",
+                            "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+                            "-DCMAKE_CXX_FLAGS='-std=c++17'"]
         },
         "rel-with-deb-info": {
-            "cmake-args": ["-DCMAKE_BUILD_TYPE=RelWithDebInfo"]
+            "cmake-args": ["-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                            "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+                            "-DCMAKE_CXX_FLAGS='-std=c++17'"]
         },
         "release": {
-            "cmake-args": ["-DCMAKE_BUILD_TYPE=Release"]
+            "cmake-args": ["-DCMAKE_BUILD_TYPE=Release",
+                            "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+                            "-DCMAKE_CXX_FLAGS='-std=c++17'"]
         }
+
     }
 }
