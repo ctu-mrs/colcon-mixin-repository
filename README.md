@@ -18,7 +18,7 @@ To register this repository with `colcon` (using the identifier "default"),
 invoke the following command:
 
 ```
-colcon mixin add default https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml
+colcon mixin add default https://raw.githubusercontent.com/ctu-mrs/colcon-mixin-repository/master/index.yaml
 ```
 
 Afterwards as well as on a regular base fetch the latest content from the
@@ -34,7 +34,7 @@ The `index` as well as the mixins can also be local files.
 That is e.g. useful when iterating on the mixin files before publishing them:
 
 ```
-git clone https://github.com/colcon/colcon-mixin-repository.git
+git clone https://github.com/ctu-mrs/colcon-mixin-repository.git
 colcon mixin add default file://`pwd`/colcon-mixin-repository/index.yaml
 ```
 
